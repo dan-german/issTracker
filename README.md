@@ -4,4 +4,4 @@ issTracker is an iOS application written in swift that tracks the International 
 
 ### Setting up ###
 
-* Make sure to install the required libraries using CocoaPods and launch the Xcode project using IssTracker.xcworkspace
+* Make sure to install the required libraries using CocoaPods and launch the Xcode project using "IssTracker.xcworkspace"
