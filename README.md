@@ -1,6 +1,6 @@
 # issTracker #
 
-issTracker is an iOS application written in swift that tracks the International Space Station’s orbit and notifies sightings (visible to the naked eye) based on user location.
+issTracker is an iOS application written in Swift that tracks the International Space Station’s orbit and notifies sightings (visible to the naked eye) based on user location.
 
 ### Setting up ###
 
