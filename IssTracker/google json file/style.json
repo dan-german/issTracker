@@ -1,0 +1,19 @@
+[
+ {
+ "featureType": "poi",
+ "elementType": "all",
+ "stylers": [
+             {
+             "visibility": "off"
+             }
+             ]
+ },
+ {
+ "featureType": "road",
+ "stylers": [
+             {
+             "visibility": "off"
+             }
+             ]
+ }
+ ]
