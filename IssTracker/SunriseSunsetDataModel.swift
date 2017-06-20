@@ -2,6 +2,7 @@ import ObjectMapper
 
 class SunData: Mappable {
     
+    
     //MARK: - Properties
     
     private(set) var sunriseString: String?

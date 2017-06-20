@@ -2,6 +2,7 @@ import ObjectMapper
 
 class SunManager {
     
+    
     //MARK: - Singleton
     static var Instance = SunManager()
     

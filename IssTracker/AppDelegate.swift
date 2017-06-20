@@ -14,11 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var updatePassTimeTimer = Timer()
     var bootTimer = Timer()
     
+    let googleMapsKey: String = "AIzaSyAGiW01gpOS6jMy1CTw4294F8Kl6YRCv-A"
+    let mixPanelKey: String = "942595f22c76415e5ede832b961ca0ee"
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         
-        GMSServices.provideAPIKey("AIzaSyAGiW01gpOS6jMy1CTw4294F8Kl6YRCv-A")
-        Mixpanel.initialize(token: "942595f22c76415e5ede832b961ca0ee")
+        GMSServices.provideAPIKey(googleMapsKey)
+        Mixpanel.initialize(token: mixPanelKey)
         
         UserLocation.Instance.manager.requestAlwaysAuthorization()
         

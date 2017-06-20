@@ -10,8 +10,8 @@ class MinutesPickerCell: UITableViewCell {
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
-        
     }
+    
     required init?(coder aDecoder: NSCoder) {
         
         
@@ -20,10 +20,7 @@ class MinutesPickerCell: UITableViewCell {
     
     //MARK: - UI
     
-    let label: UILabel = {
-        let label = UILabel()
-        return label
-    }()
+    let label = UILabel()
     
     let Button: UIButton = {
         let button = UIButton()

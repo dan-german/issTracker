@@ -15,16 +15,9 @@ class SwitchCell: UITableViewCell {
     
     //MARK: - UI
     
-    let label: UILabel = {
-        let label = UILabel()
-        return label
-    }()
+    let label = UILabel()
     
-    
-    let enableSwitch: UISwitch = {
-        let swi = UISwitch()
-        return swi
-    }()
+    let enableSwitch = UISwitch()
     
     func setupViews(){
         

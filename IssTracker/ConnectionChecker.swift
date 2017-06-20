@@ -3,7 +3,7 @@ import SystemConfiguration
 class ConnectionChecker {
     
         
-    class func isConnected() -> Bool {
+    static func isConnected() -> Bool {
         
         
         var zeroAddress = sockaddr_in()
@@ -19,6 +19,7 @@ class ConnectionChecker {
         }
         
         var flags: SCNetworkReachabilityFlags = []
+        
         if !SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags) {
             return false
         }

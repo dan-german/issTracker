@@ -2,17 +2,16 @@ import ObjectMapper
 
 class Response: Mappable {
     
+    
     //MARK: - Properties
     
-    var passTimesArray = [PassTime]()
+    private(set) var passTimesArray = [PassTime]()
     
     //MARK: - Initializers
     
-    required init?(map: Map) {
-        
-    }
+    required init?(map: Map) {}
     
-     func mapping(map: Map) {
+    func mapping(map: Map) {
         
         passTimesArray <- map["response"]
     }
@@ -79,7 +78,7 @@ class PassTime: Mappable {
             dateFormatter.dateFormat = "HHmm"
             let date = Date(timeIntervalSince1970: risetime!)
             let string = dateFormatter.string(from: date)
-            return string            
+            return string
         }
     }
     
@@ -91,10 +90,10 @@ class PassTime: Mappable {
     
     var emoji: String {
         get {
-            if !isVisible {
-                return "☀️"
-            } else {
+            if isVisible {
                 return "🌑"
+            } else {
+                return "☀️"
             }
         }
     }
@@ -104,6 +103,8 @@ class PassTime: Mappable {
     required init?(map: Map) {}
     
     func mapping(map: Map) {
+        
+        
         duration <- map["duration"]
         risetime <- map["risetime"]
     }

@@ -11,11 +11,13 @@ class UserLocation: NSObject, CLLocationManagerDelegate {
     
     //MARK: - Properties
     
-    private var location = CLLocation()
-    let manager = CLLocationManager()
     private(set) var latitude: Double?
     private(set) var longitude: Double?
     private(set) var altitude: Double?
+    
+    private var location = CLLocation()
+    let manager = CLLocationManager()
+
     
     //MARK: - Initializers
     
@@ -70,6 +72,7 @@ class UserLocation: NSObject, CLLocationManagerDelegate {
                     })
                 }
             }
+            
             alertController.addAction(settingsAction)
             let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
             alertController.addAction(cancelAction)

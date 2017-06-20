@@ -172,7 +172,7 @@ class ScheduleController: UITableViewController {
             
             for j in 0..<passTimes.count{
                 
-                //Populate the sections/day with sightings
+                //Populate the section/day with sightings
                 if passTimes[j].wholeDate.hasSuffix(sortedUniqueStrings[i]){
                     
                     riseHoursForSectionStrings[i].append(passTimes[j].riseHour)

@@ -5,8 +5,8 @@ class IssLocation: Mappable {
     
     //MARK: - Properties
     
-    var lat: String?
-    var lon: String?
+    private(set) var lat: String?
+    private(set) var lon: String?
     
     //MARK: - Initializers
     
